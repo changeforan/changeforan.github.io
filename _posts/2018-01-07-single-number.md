@@ -1,12 +1,12 @@
-<!--
+---
 author: changeforan
 date: 2018-01-07
 title: 用分治找出落单的数
 tags: algorithm, java
 category: Algorithm
-status: publish
-summary: 一道经典算法题的新思路
--->
+published: True
+---
+
 [落单的数](http://www.lintcode.com/zh-cn/problem/single-number/)是一道很有趣的算法题，题目如下
 > 给出2*n + 1 个的数字，除其中一个数字之外其他每个数字均出现两次，找到这个数字。
 
