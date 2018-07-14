@@ -50,9 +50,9 @@ menuitems:
     - { title:    Computer, 
         category: computer,
         url:      /computer.html }
-    - { title:    Life, 
-        category: life,
-        url:      /life.html }
+    - { title:    Research,
+        category: research,
+        url:      /research.html }
     - { title:    Archive, 
         url:      /archive.html }
     - { title:    Tags, 
