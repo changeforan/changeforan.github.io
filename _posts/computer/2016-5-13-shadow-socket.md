@@ -39,6 +39,9 @@ tags: [linux]
 }
 ```
 
+<!--more-->
+
+
 ### 2.2  开启ssserver
 
 `ssserver -c /etc/shadowsocks.json -d start`
