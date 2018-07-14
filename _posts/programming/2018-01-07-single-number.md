@@ -3,6 +3,7 @@ layout: post
 title: "用分治找出落单的数"
 author: changeforan
 category: programming
+use_math: true
 tags: [algorithm, java]
 ---
 [落单的数](http://www.lintcode.com/zh-cn/problem/single-number/)是一道很有趣的算法题，题目如下
