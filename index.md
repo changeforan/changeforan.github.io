@@ -1,1 +1,1 @@
-[用分支法找出落单的数]({% post_url 2018-01-07-single-number %})
+[用分治法找出落单的数]({% post_url 2018-01-07-single-number %})
