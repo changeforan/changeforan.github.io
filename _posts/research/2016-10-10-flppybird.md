@@ -6,7 +6,7 @@ category: research
 tags: [algorithm, game]
 ---
 
-![enter image description here](../../../../Downloads/MyBlog-master/MyBlog-master/img/flappybird.jpg)
+![enter image description here]({{ site.url }}/img/flappybird.jpg)
 
 
 ##问题来源：

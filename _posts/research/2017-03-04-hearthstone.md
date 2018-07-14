@@ -6,7 +6,7 @@ category: research
 tags: [algorithm, game]
 ---
 
-![Alt text](../../../../Downloads/MyBlog-master/MyBlog-master/img/hearthstone.png)
+![Alt text]({{ site.url }}/img/hearthstone.png)
 
 某玩家沉迷炉石不能自拔，虽然实力只有贴吧水平。今天他提出了一个小问题：
 >"如果我的胜率是50%，那我能在竞技场里赢几场？" 
