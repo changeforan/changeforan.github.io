@@ -30,5 +30,5 @@ $$
 T(n) = \Theta(n)
 $$
 为了更有力地说服这个算法时间复杂度是$O(N)$的，特绘制异或算法与分治算法随n增大时的时间图像。
-![Alert text](../../../../Downloads/MyBlog-master/MyBlog-master/img/singlenumber.png)
+![Alert text]({{ site.url }}/img/singlenumber.png)
 可以看到，相比于异或算法，分治算法的耗时确实更多，但的的确确是$O(N)$的时间复杂度。
