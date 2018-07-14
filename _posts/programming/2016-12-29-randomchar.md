@@ -3,6 +3,7 @@ layout: post
 title: "随机生成合法字符"
 author: changeforan
 category: programming
+use_math: true
 tags: [algorithm, java]
 ---
 
