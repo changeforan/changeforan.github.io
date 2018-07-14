@@ -6,21 +6,21 @@ category: computer
 tags: [linux]
 ---
 
-##1. 安装ss
+## 1. 安装ss
 
 **vps OS : Ubuntu 14.04 LTS**
 
-###1.1 安装 pip
+### 1.1 安装 pip
 
 `apt-get install python-pip`
 
-###1.2 安装 shadowsocks
+### 1.2 安装 shadowsocks
 
 `pip install shadowsocks`
 
-##2. ss配置
+## 2. ss配置
 
-###2.1 创建/etc/shadowsocks.json，内容如下
+### 2.1 创建/etc/shadowsocks.json，内容如下
 
 ```
 {
@@ -39,13 +39,13 @@ tags: [linux]
 }
 ```
 
-###2.2  开启ssserver
+### 2.2  开启ssserver
 
 `ssserver -c /etc/shadowsocks.json -d start`
 
-##3. ss在线管理
+## 3. ss在线管理
 
-###3.1 端口流量统计
+### 3.1 端口流量统计
 1. 向OUTPUT链添加某用户端口（以443为例）出网规则
 `iptables -A OUTPUT -p tcp --sport 443`
 2. 显示流量统计
