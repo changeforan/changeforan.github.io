@@ -26,8 +26,8 @@ excerpt_separator: <!--more-->
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title : Bosscang's blog
-tagline: 
+title : Bosscang's Blog
+tagline:
 author :
   name : Sheng Chang
   email : changeforan@gmail.com
@@ -44,9 +44,6 @@ license:
 
 # Configurations for the menu items of the navigation bar
 menuitems:
-    - { title:    Research, 
-        category: research,
-        url:      /research.html }
     - { title:    Programming, 
         category: programming,
         url:      /programming.html }
@@ -56,31 +53,15 @@ menuitems:
     - { title:    Life, 
         category: life,
         url:      /life.html }
-    - { title:    Misc, 
-        category: misc,
-        url:      /misc.html }
     - { title:    Archive, 
         url:      /archive.html }
     - { title:    Tags, 
         url:      /tags.html }
-    - { title:    About,
-        category: about,
-        dropdown: true,
-        subitems: [ { title: "Curriculum Vitae",
-                      url:   "/about/cv.html" },
-                    { title: "Publications",
-                      url:   "/about/publications.html" },
-                    { title: "Projects",
-                      url:   "/about/projects.html" },
-                    { title: "Teaching",
-                      url:   "/about/teaching.html" } ] }
 
 sections:
-    - research
     - programming
     - computer
     - life
-    - misc
     - archive
     - tags
 
