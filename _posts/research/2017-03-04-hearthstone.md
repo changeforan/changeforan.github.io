@@ -3,6 +3,7 @@ layout: post
 title: "炉石竞技场 我能混几场"
 author: changeforan
 category: research
+use_math: true
 tags: [algorithm, game]
 ---
 
