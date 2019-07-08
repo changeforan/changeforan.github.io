@@ -20,7 +20,7 @@ FIND-SINGLE-NUMBER(A,low,high)
 1 if low == high
 2	return A[low]
 3 else k = PARTITION(A,low,high)
-4 if (k-p) mod 2 == 1
+4 if (k-low) mod 2 == 1
 5 	return  FIND-SINGLE-NUMBER(A,low,k-1)
 6 else return FIND-SINGLE-NUMBER(A,k,high)
 ```
