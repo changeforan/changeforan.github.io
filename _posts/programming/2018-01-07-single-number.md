@@ -19,10 +19,10 @@ $O(N^2)$ 的解法是显而易见的，如果加上时间复杂度 $O(N)$ 的限
 FIND-SINGLE-NUMBER(A,low,high)
 1 while (low < hight)
 2   k = PARTITION(A,low,high)
-5   if (k-low) mod 2 == 1
-6 	  high = k-1
-7   else low = k
-8 return A[low]
+3   if (k-low) mod 2 == 1
+4 	  high = k-1
+5   else low = k
+6 return A[low]
 ```
 算法的核心在于第三行的PARTITION, 这里的PARTITION其实就是快排算法的第一步，每次在A[low]和A[high]之间随机选取一个值作为中心值，通过$O(N)$复杂的PARTITION，将A分为左右两个部分，左边部分严格小于中心值，右边部分大于等于中心值；对于分割完毕的两部分，落单的值一定在元素个数为奇数的一边，所以对这一边进行递归操作，直到找出这个落单的值。因为采用了随机化的PARTITION可以证明该算法的时间复杂度为$O(N)$，在这里我们假设每次分割都近乎平均，那么算法运行时间的递归式为：
 $$
