@@ -17,10 +17,8 @@ $O(N^2)$ 的解法是显而易见的，如果加上时间复杂度 $O(N)$ 的限
 ```
 //伪代码
 FIND-SINGLE-NUMBER(A,low,high)
-1 if low == high
-2	return A[low]
-3 else k = PARTITION(A,low,high)
-4 while (low < hight)   
+1 while (low < hight)
+2   k = PARTITION(A,low,high)
 5   if (k-low) mod 2 == 1
 6 	  high = k-1
 7   else low = k
