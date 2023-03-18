@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>炉石竞技场 我能混几场 | Bosscang's Blog</title>
+<meta name="generator" content="Jekyll v3.9.3">
+<meta property="og:title" content="炉石竞技场 我能混几场">
+<meta name="author" content="bosscang">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="Welcome to Bosscang's blog!">
+<meta property="og:description" content="Welcome to Bosscang's blog!">
+<link rel="canonical" href="http://localhost:4000/research/2017/03/04/hearthstone.html">
+<meta property="og:url" content="http://localhost:4000/research/2017/03/04/hearthstone.html">
+<meta property="og:site_name" content="Bosscang's Blog">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2017-03-04T00:00:00+08:00">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="炉石竞技场 我能混几场">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"bosscang"},"dateModified":"2017-03-04T00:00:00+08:00","datePublished":"2017-03-04T00:00:00+08:00","description":"Welcome to Bosscang&#39;s blog!","headline":"炉石竞技场 我能混几场","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/research/2017/03/04/hearthstone.html"},"url":"http://localhost:4000/research/2017/03/04/hearthstone.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css">
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Bosscang's Blog">
+<script>MathJax={"tex":{"inlineMath":[["$","$"],["\\(","\\)"]],"displayMath":[["$$","$$"],["\\[","\\]"]]},"svg":{"fontCache":"global"}}</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+<header class="site-header" role="banner">
+
+  <div class="wrapper">
+<a class="site-title" rel="author" href="/">Bosscang's Blog</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger">
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewbox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"></path>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"></div>
+      </nav>
+</div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">炉石竞技场 我能混几场</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2017-03-04T00:00:00+08:00" itemprop="datePublished">Mar 4, 2017
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">bosscang</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p><img src="http://localhost:4000/img/hearthstone.png" alt="Alt text"></p>
+<p>某玩家沉迷炉石不能自拔，虽然实力只有贴吧水平。今天他提出了一个小问题：</p>
+<blockquote>
+<p>"如果我的胜率是50%，那我能在竞技场里赢几场？"</p>
+</blockquote>
+<!--more-->
+<p>竞技场的比赛规则很有意思：赢满12场或者输满3场即结束游戏。因此分别考虑这两种情况，设赢得比赛的概率为$Q$</p>
+<h3 id="section">赢满12场的大神</h3>
+<h4 id="section-1">0负12胜的王者玩家</h4>
+<p>这种情况是最简单的，每场都赢，连赢12把</p>
+<p>$$ P_0 = Q^{12} $$</p>
+<h4 id="section-2">1负12胜的钻石玩家</h4>
+<p>共计13场比赛，其中最后一把为胜，前12场中不小心输了一把，共有12种输法</p>
+<p>$$ P_1 = C_{12}^1 \times Q^{12} \times (1-Q) $$</p>
+<h4 id="section-3">2负12胜的白金玩家</h4>
+<p>共计14场比赛，其中最后一把为胜，前13场中意外输了两场</p>
+<p>$$
+P_2 = Q^{12} \times (1-Q)^2 \times C^2_{13}
+$$</p>
+<h4 id="section-4">输满3场的倔强青铜玩家</h4>
+<p>这些玩家有个共同特点，那就是最后一把输掉了饮恨离场，在此之前可能赢了$ [0,11] $把，但已经输了2把。设赢了 $ n $ 场，那么总共比赛 $ n+3 $，前 $ n+2 $场中赢了$ n $场，有$ C^n_{n+2} $种可能。</p>
+<p>$$
+P_n = Q^n \times (1-Q)^3 \times C^n_{n+2}
+$$</p>
+<p>综合以上所有情况，一个获胜概率为$Q$的玩家，在竞技场里的获胜数期望为</p>
+<p>$$
+E = 12 \times \sum_{i=0}^{2}P_i + \sum_{n=0}^{11}n\times P_n
+$$</p>
+<p>当一个玩家是平均水平，即取 $ Q = 0.5 $，带入可得，$ E \approx 2.99 $ 这大概就是为啥3场比赛获胜的奖励和你的入场成本持平的原因吧。</p>
+
+  </div>
+<a class="u-url" href="/research/2017/03/04/hearthstone.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Bosscang's Blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Bosscang's Blog</li>
+<li><a class="u-email" href="mailto:changeforan@gmail.com">changeforan@gmail.com</a></li>
+</ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+<ul class="social-media-list"><li><a href="https://github.com/changeforan"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">changeforan</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Welcome to Bosscang's blog!</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>如何评价 Flappy bird 玩家的游戏水平 | Bosscang's Blog</title>
+<meta name="generator" content="Jekyll v3.9.3">
+<meta property="og:title" content="如何评价 Flappy bird 玩家的游戏水平">
+<meta name="author" content="bosscang">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="Welcome to Bosscang's blog!">
+<meta property="og:description" content="Welcome to Bosscang's blog!">
+<link rel="canonical" href="http://localhost:4000/research/2016/10/10/flppybird.html">
+<meta property="og:url" content="http://localhost:4000/research/2016/10/10/flppybird.html">
+<meta property="og:site_name" content="Bosscang's Blog">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2016-10-10T00:00:00+08:00">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="如何评价 Flappy bird 玩家的游戏水平">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"bosscang"},"dateModified":"2016-10-10T00:00:00+08:00","datePublished":"2016-10-10T00:00:00+08:00","description":"Welcome to Bosscang&#39;s blog!","headline":"如何评价 Flappy bird 玩家的游戏水平","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/research/2016/10/10/flppybird.html"},"url":"http://localhost:4000/research/2016/10/10/flppybird.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css">
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Bosscang's Blog">
+<script>MathJax={"tex":{"inlineMath":[["$","$"],["\\(","\\)"]],"displayMath":[["$$","$$"],["\\[","\\]"]]},"svg":{"fontCache":"global"}}</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+<header class="site-header" role="banner">
+
+  <div class="wrapper">
+<a class="site-title" rel="author" href="/">Bosscang's Blog</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger">
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewbox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"></path>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"></div>
+      </nav>
+</div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">如何评价 Flappy bird 玩家的游戏水平</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2016-10-10T00:00:00+08:00" itemprop="datePublished">Oct 10, 2016
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">bosscang</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p><img src="http://localhost:4000/img/flappybird.jpg" alt="enter image description here"></p>
+<h2 id="section">问题来源：</h2>
+<p><a href="https://en.wikipedia.org/wiki/Flappy_Bird">Flappy bird</a>之类的游戏有一个共同的特点，及玩家的目标是闯过尽量多的关卡，而每个关卡的难度几乎是一样的，不会随着游戏进行显著提高，姑且将此类游戏称之为“连续生存模型”。
+那么如何评价一个玩家的水平呢？此类游戏几乎都使用记录历史最佳成绩的方式，这种方式有很强的刺激作用，不同的玩家之间会比较各自的最佳成绩，而玩家自己则会不断试图突破自己的最佳成绩。
+但是，最佳成绩的偶然性很大，某次的“超神”发挥之后可能很久都不会达到这样的成绩。不难想到另一个方法是取玩家游戏成绩的平均值，但取平均值会带来评价标准无上限的问题，平均成绩1000的玩家和平均成绩2000的玩家，水平究竟相差多少呢。
+那么一个玩家该如何在此类游戏中判断自己的实际水平，又或者说，玩家在开始一局新游戏前应该对此次游戏成绩抱有怎样的期望呢？</p>
+<!--more-->
+<h2 id="section-1">问题提出：</h2>
+<p><strong>若一闯关游戏有无限关，玩家每关的存活概率为P，求通关数的期望。</strong>
+显然$ 0&lt;P&lt;1 $ ，期望值为 $ 1 \times P + 2 \times P^2 + 3 \times P^3 + \dots + n \times P^n $  ，即</p>
+<p>$$ E =  P + 2 \times P^2 + 3 \times P^3 + \dots + n \times P^n  (n \to \infty) $$</p>
+<p>将上式两边同时乘以 P 并与原式相减，得</p>
+<p>$$ E(1-P) = P + P^2 + P^3+ \dots +P^n - n\times P^{n+1} $$</p>
+<p>由等比数列求和公式得</p>
+<p>$$ E={ P \over {1-P}^2} - {(1+n)P^{n+1} \over {1-P}^2} $$</p>
+<p>其中 $ (1+n)P^{n+1} $ 在 $ n \to \infty $ 时为0，所以</p>
+<p>$$ E =  { P \over {(1-P)}^2} $$</p>
+<p>由此可见，若玩家每关的存活几率是80%，那么其通关数的期望值为20。
+反之，如果一个玩家在多次游戏后，其成绩平均值为100，那么其每关的存活几率约为90.49%。</p>
+<p>因此在“连续生存模型”式的游戏中，与其使用平均成绩 $ E $ 来判断玩家水平，不如使用反解以上方程得到的百分制（ $ P \times 100 $ ）评价标准。在这个标准中，玩家的水平被限定在0-100分之间，能得到95分以上的玩家都可谓是大神。</p>
+
+  </div>
+<a class="u-url" href="/research/2016/10/10/flppybird.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Bosscang's Blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Bosscang's Blog</li>
+<li><a class="u-email" href="mailto:changeforan@gmail.com">changeforan@gmail.com</a></li>
+</ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+<ul class="social-media-list"><li><a href="https://github.com/changeforan"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">changeforan</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Welcome to Bosscang's blog!</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
